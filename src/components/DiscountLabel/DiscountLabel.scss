@@ -1,0 +1,33 @@
+.label {
+  background-color: #f63a3a;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 1rem 0.2rem 0.2rem 1rem;
+  max-width: 7.3rem;
+  height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-y: clip;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 100%;
+    z-index: 1;
+    width: 3.6rem;
+    right: -1.1rem;
+    position: absolute;
+
+    background: #f63a3a;
+    border-radius: 6px;
+    transform: rotate(45deg);
+  }
+
+  p {
+    z-index: 999;
+    padding-left: 0.7rem;
+  }
+}

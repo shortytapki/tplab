@@ -1,0 +1,18 @@
+.language {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+
+  .locale {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--inactive {
+      color: #94979c;
+    }
+  }
+}

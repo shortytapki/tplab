@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #4d5969;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+#root {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.products-page {
+  padding: 13.6rem 12rem;
+}
+
+:root.card-page body {
+  background-color: #edf2f8;
+}
+
+@media only screen and (max-width: 1233px) {
+  .grid {
+    grid-template-columns: 7.8rem repeat(4, 1fr);
+  }
+
+  .filters {
+    margin-bottom: 3rem;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 882px) {
+  html {
+    font-size: 45%;
+  }
+
+  .product__image {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 662px) {
+  .product-header {
+    font-size: 1rem;
+  }
+
+  .product {
+    font-size: 1.2rem;
+
+    &__detail {
+      font-size: 1rem;
+    }
+
+    &__category {
+      font-size: 0.9rem;
+    }
+  }
+
+  .products-page {
+    padding: 4rem;
+  }
+
+  .navigation,
+  .navigation .filters {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .navigation .filters {
+    gap: 1rem;
+  }
+
+  .card-view {
+    .disclaimer {
+      font-size: 1.6rem;
+    }
+
+    padding: 7.6rem 5rem 12.5rem;
+
+    h1 {
+      max-width: 25rem;
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+
+    .prices {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .card-header {
+      align-items: start;
+      gap: 2rem;
+      flex-direction: column;
+      justify-content: unset;
+    }
+
+    .layout {
+      grid-template-rows: 20rem 1fr;
+      .img-container {
+        justify-self: center;
+        max-height: 20rem;
+        max-width: 20rem;
+        &__image {
+          max-width: 20rem;
+          height: 20rem;
+        }
+      }
+
+      .stars {
+        justify-content: center;
+      }
+    }
+  }
+}

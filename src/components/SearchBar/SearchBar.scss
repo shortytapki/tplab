@@ -1,0 +1,18 @@
+.searchbar {
+  width: 32rem;
+  height: 3.6rem;
+
+  background: #ffffff;
+  color: #b6c2d2;
+  border: 1px solid #d8e2ee;
+  border-radius: 1.8rem;
+  padding: 1rem 3.2rem;
+  background: url('./search.svg') no-repeat;
+  background-position: 1.4rem 1rem;
+  font-size: inherit;
+  font-weight: inherit;
+
+  &:focus {
+    color: inherit;
+  }
+}

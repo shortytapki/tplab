@@ -1,0 +1,40 @@
+.product-header {
+  height: 3.5rem;
+  font-size: 1.3rem;
+  background: #edf2f8;
+  font-weight: 600;
+  padding: 0 2.2rem;
+}
+
+.product {
+  padding: 1.7rem 2rem;
+
+  &__image {
+    width: 6rem;
+    height: 4rem;
+  }
+
+  &__category {
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #9da8ba;
+  }
+
+  &__detail {
+    font-size: 1.4rem;
+  }
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 7.8rem 1fr 15.1rem 12.4rem 16rem;
+  align-items: center;
+}
+
+.aligned {
+  text-align: center;
+}
