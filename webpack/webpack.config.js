@@ -32,7 +32,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: 'bundle.[chunkhash].js',
-    publicPath: isDev ? '/' : '/tplab-src/',
+    publicPath: isDev ? '/' : '/tplab/',
   },
 
   plugins: [
